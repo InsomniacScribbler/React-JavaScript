@@ -4,4 +4,4 @@ var a = 10;
 console.log(b); // ReferenceError
 let b = 20;
 const c = 30;
-console.log(a, b, c);
+console.log(a, b, c); 
