@@ -97,3 +97,34 @@ function multiply(x, y = 2) {
 }
 console.log(multiply(10)); // 20
 console.log(multiply(10, 3)); // 30
+
+
+
+// control structures
+let u = 10;
+if (u > 5) {
+    console.log("u is greater than 5");
+} else {
+    console.log("u is less than or equal to 5");
+}
+//switch case
+switch (u) {
+    case 5:
+        console.log("u is 5");
+        break;
+    case 10:
+        console.log("u is 10");
+        break;
+    default:
+        console.log("u is neither 5 nor 10");
+}   
+
+
+// early return pattern; expalanation: Instead of nesting the main logic of a function inside multiple conditional statements, you can return early when certain conditions are met. This reduces the level of indentation and makes the code easier to read.
+function processNumber(num) {
+    if (num < 0) {
+        console.log("Negative number");
+        return;
+    }
+    console.log("Positive number");
+}
