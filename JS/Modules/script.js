@@ -69,3 +69,15 @@ console.log(r instanceof String); // false
 let s = {name: "Alice"};
 console.log(s instanceof Object); // true
 console.log(s instanceof Array); // false
+
+
+// increment and decrement operators
+let t = 5;
+console.log(t++); // 5 (returns t, then increments)
+console.log(t); // 6
+console.log(++t); // 7 (increments t, then returns)
+console.log(t); // 7
+console.log(t--); // 7 (returns t, then decrements)
+console.log(t); // 6
+console.log(--t); // 5 (decrements t, then returns)
+console.log(t); // 5
