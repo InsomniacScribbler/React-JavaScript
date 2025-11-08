@@ -59,3 +59,13 @@ if (q) {
  // == vs ===
     console.log(5 == "5"); // true (loose equality)
     console.log(5 === "5"); // false (strict equality)
+
+
+// INSTANCEOF OPERATOR
+let r = [1, 2, 3];
+console.log(r instanceof Array); // true
+console.log(r instanceof Object); // true
+console.log(r instanceof String); // false
+let s = {name: "Alice"};
+console.log(s instanceof Object); // true
+console.log(s instanceof Array); // false
