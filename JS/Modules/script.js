@@ -27,3 +27,31 @@ f = "Hello"; // f is now a string
 console.log(typeof f); // "string"
 f = true; // f is now a boolean
 console.log(typeof f); // "boolean" 
+
+//type coercion
+let g = "5";
+let h = 10;
+let i = g + h; // "510" (string concatenation)
+console.log(i); // "510"
+let j = g * h; // 50 (numeric multiplication)
+console.log(j); // 50
+let k = g - h; // -5 (numeric subtraction)
+console.log(k); // -5
+let l = g / h; // 0.5 (numeric division)
+console.log(l); // 0.5
+let m = g == h; // false (loose equality)
+console.log(m); // false
+let n = g === h; // false (strict equality)
+console.log(n); // false
+let o = Boolean(g); // true (non-empty string is truthy)
+console.log(o); // true
+let p = Number(g); // 5 (string to number conversion)
+console.log(p); // 5
+// truthy and falsy values
+let q = 0; // falsy
+if (q) {
+    console.log("q is truthy");
+} else {
+    console.log("q is falsy");
+} // "q is falsy"
+ console.log(2* "nikhil"); // NaN because string cannot be converted to number and multiplied
