@@ -81,3 +81,19 @@ console.log(t--); // 7 (returns t, then decrements)
 console.log(t); // 6
 console.log(--t); // 5 (decrements t, then returns)
 console.log(t); // 5
+
+// function
+function add(x, y) {
+    return x + y;
+}
+console.log(add(10, 20)); // 30
+
+// arrow function
+const addArrow = (x, y) => x + y;
+console.log(addArrow(10, 20)); // 30    
+// default parameters
+function multiply(x, y = 2) {
+    return x * y;
+}
+console.log(multiply(10)); // 20
+console.log(multiply(10, 3)); // 30
