@@ -128,3 +128,25 @@ function processNumber(num) {
     }
     console.log("Positive number");
 }
+
+// rock-paper-scissors game using early return pattern and control structures one user vs computer
+function playRPS(userChoice) {
+    const choices = ["rock", "paper", "scissors"];
+    const computerChoice = choices[Math.floor(Math.random() * 3)]; // random choice for computer using Math.random() and Math.floor()
+    console.log(`Computer chose: ${computerChoice}`);
+
+    if (userChoice === computerChoice) {
+        console.log("It's a tie!");
+        return;
+    }
+
+    if (
+        (userChoice === "rock" && computerChoice === "scissors") ||
+        (userChoice === "paper" && computerChoice === "rock") ||
+        (userChoice === "scissors" && computerChoice === "paper")
+    ) {
+        console.log("You win!");
+    } else {
+        console.log("You lose!");
+    }
+}
