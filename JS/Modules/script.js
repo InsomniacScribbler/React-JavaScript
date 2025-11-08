@@ -55,3 +55,7 @@ if (q) {
     console.log("q is falsy");
 } // "q is falsy"
  console.log(2* "nikhil"); // NaN because string cannot be converted to number and multiplied
+
+ // == vs ===
+    console.log(5 == "5"); // true (loose equality)
+    console.log(5 === "5"); // false (strict equality)
